@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>memorybook</title>
+
+	<!-- Bootstrap reboot (для сброса стилей) -->
+	<link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+
+	<!-- Bootstrap сетка -->
+	<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+
+	<!-- Шрифты с Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+		rel="stylesheet">
+
+	<!-- Стили сайта -->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="img.ico">
+</head>
+
+<body>
+	
+
+
+
+    <nav class="navbar">
+		<div class="container">
+
+			<a href="#" class="navbar-brand">Memory book</a>
+
+			<div class="navbar-wrap">
+			
+
+					<a href="#">Story</a>
+					<a href="#fam">Photos</a>
+					<a href="#roadmap">Roadmap</a>
+
+				
+			</div>
+		</div>
+	</nav>
+<div class="img">
+	<div class="imge">
+    <img src="img/egorjpg.jpg" class="egor">
+    </div> 
+	<div class="imgp">
+	<img src="img/polina.jpg" class="polina">
+    </div> 
+
+		<div class="egors">Это Егор, он любит Полину и планирует завести с ней семью</div>
+	    <div class="polins">Это Полина, она любит шопиться и кушать суши. </div>
+        <div class="loves">The quiet bookstore was Yegor’s domain, a place of hushed whispers and dusty tomes. Then came Polina, a vibrant force of nature, her laughter echoing through the aisles. He, a man of routine, found himself utterly captivated by her sunshine energy. A clumsy accident with a latte led to a moment of unexpected connection, as spilled coffee brought them closer than ever. They discovered shared loves – for classic films, rainy days, and of course, books – while Yegor’s reserved nature gave way to Polina’s infectious spirit. She, in turn, was drawn to his quiet intelligence and subtle humor. On a rainy evening, surrounded by towering shelves, Polina whispered her growing affection. Yegor, his eyes shining with emotion, confessed his own, a gentle declaration of his already-present love. Their first kiss, delicate and tentative, felt like a new story being written on the pages of their lives. Their love was born not with grand gestures, but in the intimate corners of the bookstore, a love as steadfast and comforting as the stories housed within its walls.</div>
+    
+    
+</div>
+
+<div class="container2">
+	
+	<h1 id="fam">family photos</h1>
+ <div class="img-container">
+
+
+
+	<div class="img1">
+	  <img src="img/img1.jpg" alt="">
+	</div>
+	<div class="img1">
+	  <img src="img/img2.jpg" alt="">
+	</div>
+	<div class="img1">
+	  <img src="img/img3.jpg" alt="">
+	</div>
+	<div class="img1">
+	  <img src="img/img4.jpg" alt="">
+	</div>
+	<div class="img1">
+	  <img src="img/img5.jpg" alt="">
+	</div>
+	<div class="img1">
+	  <img src="img/imgimg.jpg" alt="">
+	</div>
+	<div class="img1">
+	  <img src="img/imgimg2.jpg" alt="">
+	</div>
+	<div class="img1">
+	  <img src="img/img10pg.jpg" alt="">
+	</div>
+	<div class="img1">
+	  <img src="img/img13.jpg" alt="">
+	</div>
+	<div class="img1">
+	  <img src="img/imgimg5jpg.jpg" alt="">
+	</div>
+	<div class="img1">
+	  <img src="img/imgimg4jpg.jpg" alt="">
+	</div>
+	<div class="img1">
+	  <img src="img/imgimg3.jpg" alt="">
+	</div>
+	<div class="popup">
+		<span>&times;</span>
+		<img src="img/img5.jpg" alt="">
+	</div>
+	<div class="img1">
+		<img src="img/img15.jpg" alt="">
+	  </div>
+	  <div class="img1">
+		<img src="img/img15.jpg" alt="">
+	  </div>
+	  <div class="img1">
+		<img src="img/img15.jpg" alt="">
+	  </div>
+ </div>
+</div>
+
+
+</div>
+<div class="roadmap">
+	<h2 id="roadmap">roadmap</h2>
+	
+	
+		<hr class="vertical1">
+	 <div class="gorizont1">
+	 <dd class="lt1">Make rs</dd>
+		<p class="nb1">1</p>
+	 </div>
+	<div class="gorizont2">
+	  <dd class="lt">Living together</dd>
+	  <p class="nb">2</p>
+	</div>
+	 <div class="gorizont3">
+		<dd class="lt3">Get married</dd>
+	    <p class="nb3">3</p>
+	</div>
+	 <div class="gorizont4">
+		<dd class="lt4">Make a baby</dd>
+	    <p class="nb4">4</p>
+	 </div>
+    
+	
+</div>
+</body>
+<script>
+
+	document.querySelectorAll('.img-container img').forEach(img => {
+	  img.onclick = () => {
+		document.querySelector('.popup').style.display = 'block';
+		document.querySelector('.popup img').src = img.getAttribute('src');
+	  }
+	});
+	document.querySelector('.popup span').onclick = () => {
+	  document.querySelector('.popup').style.display = 'none';
+	}
+  
+  
+  </script>
+
+</html>
